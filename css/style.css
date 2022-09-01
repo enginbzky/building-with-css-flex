@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Flex property is used to join the roof and the body*/
+#container {
+  margin: 97px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roof {
+  width: 0;
+  height: 0;
+  border-left: 350px solid transparent;
+  border-right: 350px solid transparent;
+  border-bottom: 250px solid rgba(166, 38, 18, 0.982);
+}
+
+/*The flue is formed from two parts and is positioned on the roof with its position property.*/
+#flue1 {
+  width: 60px;
+  height: 10px;
+  background-color: rgb(175, 173, 173);
+  position: relative;
+  top: 40px;
+  left: 90px;
+}
+
+#flue2 {
+  width: 40px;
+  height: 60px;
+  background-color: rgb(105, 104, 104);
+  position: relative;
+  top: 40px;
+  left: 100px;
+}
+
+/*Flex property is used to position the windows and the door*/
+.body {
+  width: 700px;
+  height: 300px;
+  background-color: rgb(202, 113, 41);
+  display: flex;
+  justify-content: space-around;
+}
+
+/*The boxes are transformed to windows with the flex-wrap feature.*/
+.windows {
+  margin-top: 45px;
+  width: 78px;
+  height: 84px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boxes {
+  width: 22px;
+  height: 24px;
+  border: 2px solid rgb(11, 11, 11);
+  background-color: rgb(255, 255, 255);
+}
+
+/*"Align-self" property is used to position the door.*/
+#door {
+  align-self: flex-end;
+}
+
+#frame {
+  width: 100px;
+  height: 150px;
+  background-color: rgb(169, 34, 34);
+  border: 5px solid rgb(146, 92, 92);
+  border-bottom: 5px solid rgb(11, 11, 11);
+  display: flex;
+  align-items: center;
+}
+
+#handle {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: rgb(11, 11, 11);
+  border-radius: 50%;
+}
